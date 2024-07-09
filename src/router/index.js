@@ -4,10 +4,10 @@ import { Navigate   } from 'react-router-dom';
 // 使用 React.lazy 动态导入组件
 // const Demo0 = lazy(()=>import('../base/demo0'));
 
-const ContextDemo = lazy(()=>import('../demos/context'));
-const ContextDemo1 = lazy(()=>import('../demos/demo1'));
-const ContextDemo2 = lazy(()=>import('../demos/demo2'));
-const ContextDemo3 = lazy(()=>import('../demos/demo3'));
+const ContextDemo = lazy(()=>import('../base/context'));
+const ContextDemo1 = lazy(()=>import('../base/demo1'));
+const ContextDemo2 = lazy(()=>import('../base/demo2'));
+const ContextDemo3 = lazy(()=>import('../base/demo3'));
 
 // 注意v6版本router重定向的写法
 const routes = [
