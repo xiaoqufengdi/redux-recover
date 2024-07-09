@@ -25,6 +25,7 @@ function ContentDemo() {
     return (
         <Provider  store={store}>
             <div style={{padding: '50px'}}>
+                <h1>react-redux 简单使用</h1>
                 <Header/>
                 <Content/>
             </div>

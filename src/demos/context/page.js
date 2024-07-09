@@ -1,5 +1,5 @@
-import Button from './button';
+import Content from './Content';
 
 export default function Page(){
-  return <Button/>
+  return <Content/>
 }

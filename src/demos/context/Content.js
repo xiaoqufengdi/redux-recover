@@ -1,12 +1,12 @@
 import {createContext, useContext} from "react";
 import {ThemeContext} from "./index";
 
-function Button() {
+function Content() {
 
   // ✅ Recommended way
   const theme = useContext(ThemeContext);
   console.log('theme', theme);
-  return <button className={theme} >test</button>;
+  return <div style={{background: theme,  padding: '20px'}} >test theme color</div>;
 }
 
 // 历史写法
@@ -21,4 +21,4 @@ function Button() {
 //   );
 // }
 
-export default Button;
+export default Content;

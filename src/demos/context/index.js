@@ -10,14 +10,15 @@ function Demo() {
   // ...
   return (
     <ThemeContext.Provider value={theme}>
-      <Page />
-      <div>
-        <Button onClick={() => {
-          setTheme('blue');
-        }}>
-          Switch to light theme
-        </Button>
-      </div>
+        <h5>createContext 使用</h5>
+        <div>
+            <Button onClick={() => {
+              setTheme('blue');
+            }}>
+              Switch to light theme
+            </Button>
+         </div>
+        <Page/>
     </ThemeContext.Provider>
   );
 }
