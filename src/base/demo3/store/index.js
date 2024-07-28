@@ -32,5 +32,14 @@ const reduces = combineReducers({
 })
 const store = createStore(reduces, applyMiddleware(logger, thunk));
 
+// compose(funcA, funcB, funcC) 形象为 compose(funcA(funcB(funcC())))）
+
+// const store = createStore(
+//     reducer,
+//     compose(  // compose 从右向左执行避免嵌套写法
+//         applyMiddleware(thunk),
+//         DevTools.instrument()
+//     )
+// )
 
 export default store;

@@ -14,9 +14,10 @@ export const connect = (mapStateToProps, mapDispatchToProps) => (WrappedComponen
         }, [])
 
         const _updateProps = ()=>{
-            // 额外传入 props，让获取数据更加灵活方便
-            let stateProps = mapStateToProps ? mapStateToProps(store.getState(), props) : {}; // 防止 mapStateToProps 没有传入
-            let  dispatchProps = mapDispatchToProps ? mapDispatchToProps(store.dispatch, props) : {}
+            // 额外传入 props，让获取数据更加灵活方便  // 防止 mapStateToProps 没有传入
+            let stateProps = mapStateToProps ? mapStateToProps(store.getState(), props) : {};
+            // 如果没有传入第二个参数mapDispatchToProps，那么默认把dispatch作为属性注入组件props
+            let  dispatchProps = mapDispatchToProps ? mapDispatchToProps(store.dispatch, props) : {dispatch: store.dispatch}
 
             setAllProps({
                 ...stateProps,
