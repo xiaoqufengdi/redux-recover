@@ -8,6 +8,7 @@ const ContextDemo = lazy(()=>import('../base/context'));
 const ContextDemo1 = lazy(()=>import('../base/demo1'));
 const ContextDemo2 = lazy(()=>import('../base/demo2'));
 const ContextDemo3 = lazy(()=>import('../base/demo3'));
+const Advance1 = lazy(()=>import('../advance/demo1'));
 
 // 注意v6版本router重定向的写法
 const routes = [
@@ -30,6 +31,10 @@ const routes = [
         path: "/base/demo3",
         exact: true,
         element: <ContextDemo3/>
+    },{
+        path: "/advance/1",
+        exact: true,
+        element: <Advance1/>
     }
 ];
 

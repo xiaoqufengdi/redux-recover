@@ -35,12 +35,8 @@ const menuList = [
         key: 'advance',
         icon: React.createElement(NotificationOutlined),
         children: [
-            {
-                label: 'useSyncExternalStore',
-                key: "/advance/0",
-                path: "/advance/0",
-            }, {
-                label: 'useSyncExternalStore2',
+             {
+                label: 'toolkit demo1',
                 key: "/advance/1",
                 path: "/advance/1",
             }

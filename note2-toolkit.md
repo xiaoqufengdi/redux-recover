@@ -1,4 +1,4 @@
-# [toolkit](https://redux-toolkit.js.org/introduction/getting-started)
+# [Redux Toolkit](https://redux-toolkit.js.org/introduction/getting-started)
 + cra 
 ```bash
 yarn create react-app my-redux-toolkit
@@ -25,3 +25,5 @@ fetchBaseQuery（）：一个围绕 fetch 的小型包装器，旨在简化请�
 <ApiProvider />：如果您还没有 Redux 商店，则可以用作 a。Provider
 setupListeners（）：用于启用和行为的实用程序。refetchOnMountrefetchOnReconnect
 ```
+
+Redux Toolkit + React
